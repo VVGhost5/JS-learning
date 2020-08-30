@@ -1,0 +1,25 @@
+'use strict'
+
+const inputRef = document.querySelector('#controls input');
+const boxesRef = document.querySelector('#boxes');
+const buttonRenderRef = document.querySelector('button[data-action="render"]');
+const buttonDestroyRef = document.querySelector('button[data-action="destroy"]');
+
+console.log(inputRef);
+console.log(buttonRenderRef);
+console.log(buttonRenderRef);
+console.log(boxesRef);
+
+const createBoxes = function () {
+    let newBox = document.createElement("div");
+    boxesRef.appendChild(newBox);
+}
+
+const destroyBoxes = function () {
+
+}
+
+// inputRef.addEventListener('input', x);
+buttonRenderRef.addEventListener('click', createBoxes);
+buttonDestroyRef.addEventListener('click', destroyBoxes);
+
