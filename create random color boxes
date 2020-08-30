@@ -1,0 +1,11 @@
+const buttonRef = document.querySelector('.button');
+const listRef = document.querySelector('.list');
+
+const createColor = function () {
+   const newItem = document.createElement('div');
+  listRef.appendChild(newItem);
+    newItem.style.backgroundColor = `rgb(${Math.floor(Math.random() * Math.floor(256))}, ${Math.floor(Math.random() * Math.floor(256))}, ${Math.floor(Math.random() * Math.floor(256))})`;
+}
+
+buttonRef.addEventListener('click', createColor);
+
